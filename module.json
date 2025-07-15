@@ -1,0 +1,17 @@
+{
+  "name": "grid-numberer",
+  "title": "Grid Numberer",
+  "description": "Adds sequential numbers to each grid cell in FoundryVTT.",
+  "version": "1.0.0",
+  "author": "Tycedi",
+  "esmodules": ["scripts/grid-numberer.js"],
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "13",
+  "scripts": [],
+  "styles": [],
+  "packs": [],
+  "system": [],
+  "url": "https://github.com/Tycedi/foundryvtt-grid-numberer",
+  "manifest": "https://raw.githubusercontent.com/Tycedi/foundryvtt-grid-numberer/master/module.json",
+  "download": "https://github.com/Tycedi/foundryvtt-grid-numberer/archive/refs/heads/master.zip"
+}
