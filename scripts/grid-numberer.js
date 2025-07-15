@@ -2,15 +2,19 @@ Hooks.once("init", () => {
   console.log("Grid Numberer | Initialized");
 });
 
-Hooks.on("getSceneControlButtons", controls => {
-  controls.find(c => c.name === "tiles").tools.push({
-    name: "number-grid",
-    title: "Number Grid Cells",
-    icon: "fas fa-list-ol",
-    visible: game.user.isGM,
-    onClick: () => numberGrid(),
-    button: true
-  });
+Hooks.on('renderSceneControls', (controls) => {
+  const tileControl = controls.find(c => c.name === "tiles");
+  if (!tileControl.tools.some(t => t.name === "number-grid")) {
+    tileControl.tools.push({
+      name: "number-grid",
+      title: "Number Grid Cells",
+      icon: "fas fa-list-ol",
+      visible: game.user.isGM,
+      onClick: () => numberGrid(),
+      button: true
+    });
+    canvas.hud.render();
+  }
 });
 
 async function numberGrid() {
