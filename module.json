@@ -3,7 +3,7 @@
   "name": "grid-numberer",
   "title": "Grid Numberer",
   "description": "Adds sequential numbers to each grid cell in FoundryVTT.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Tycedi",
   "esmodules": ["scripts/grid-numberer.js"],
   "minimumCoreVersion": "10",
